@@ -1,2 +1,14 @@
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/5X0-umxz)
 # ICG_2024_HW1
+
+## How to run 
+```
+$ npm install
+$ npm run dev
+```
+
+## Additional Features
+- Object hierachy
+- Mouse event (hover/click)
+- Texutre
+- Good UI 🙃
