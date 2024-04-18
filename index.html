@@ -1,0 +1,100 @@
+<html>
+
+<head>
+    <title>ICG WebGL &mdash; HW1</title>
+    <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+
+    <!-- <script type="text/javascript" src="./js/glMatrix-0.9.5.min.js"></script> -->
+    <!-- <script type="text/javascript" src="./js/webgl-utils.js"></script> -->
+
+    <!-- 
+    TODO HERE: 
+    modify fragment shader or write another one
+    to implement flat, gouraud and phong shading
+ -->
+    <script id="fragmentShader" type="fragment"></script>
+
+    <!-- 
+    TODO HERE:
+    modify vertex shader or write another one
+    to implement flat, gouraud and phong shading
+
+    NOTE:
+    if you want to write bonus part (texture mapping),
+    only Teapot.json has extra attribute "vertexTextureCoords"
+    which is used for texture mappping.
+ -->
+    <script id="vertexShader" type="vertex"></script>
+
+    <script type="text/javascript"></script>
+</head>
+
+<body style="height: 100vh; display: flex; align-items: center; justify-content: space-between;">
+    <div id="panel" style="height: 100%;width: 100%;">
+    </div>
+    
+    <canvas id="ICG-canvas" style="border: none; margin-right: 32px; border-radius: 16px;" width="1060" height="590"></canvas>
+
+
+
+    <!-- <p style="position: absolute; left: 1%; top: 1%; max-width: 30%; min-width: 30%; ">
+
+    <p>
+        <label for="shading">Gouraud shading</label>
+    </p>
+
+    </br>
+    <span>Ambient Light</span>
+    <table>
+        <tr>
+            <td>Ka: <input style="max-width: 70%; vertical-align: middle;" id="am_ka" type="range" autocomplete="off"
+                    value="0.1" max="1" min="0" step="0.05" oninput="update_ambient_light()"></td>
+        </tr>
+    </table>
+    </br>
+    <span>Light 0</span>
+    <table>
+        <tr>
+            <td>X: <input style="max-width: 70%; vertical-align: middle;" id="llocX" type="range" autocomplete="off"
+                    value="30." max="40." min="-40." oninput="update_light_location()"></td>
+            <td>Y: <input style="max-width: 70%; vertical-align: middle;" id="llocY" type="range" autocomplete="off"
+                    value="20." max="40." min="-40." oninput="update_light_location()"></td>
+            <td>Z: <input style="max-width: 70%; vertical-align: middle;" id="llocZ" type="range" autocomplete="off"
+                    value="-25." max="0." min="-75." oninput="update_light_location()"></td>
+        </tr>
+    </table>
+    </br>
+    </br>
+    </br>
+
+    <span>Object</span>
+    <table>
+        <tr>
+            <th></th>
+            <th>X axis</th>
+            <th>Y axis</th>
+            <th>Z axis</th>
+        </tr>
+        <tr>
+            <td>Trans.</td>
+            <td><input id="transX" type="range" value="0" max="50" min="-50"></td>
+            <td><input id="transY" type="range" value="0" max="50" min="-50"></td>
+            <td><input id="transZ" type="range" value="0" max="50" min="-50"></td>
+        </tr>
+        <tr>
+            <td>Rotate</td>
+            <td><input id="rotateX" type="range" value="0" max="180" min="-180"></td>
+            <td><input id="rotateY" type="range" value="0" max="180" min="-180"></td>
+            <td><input id="rotateZ" type="range" value="0" max="180" min="-180"></td>
+        </tr>
+    </table>
+    </p> -->
+
+    <script type="module" src="/src/main.tsx"></script>
+    <!-- <script>
+        document.body.onload = webGLStart;
+    </script> -->
+
+</body>
+
+</html>
